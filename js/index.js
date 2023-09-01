@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location = "products.html"
     });
     document.getElementById("muebles").addEventListener("click", function() {
-        localStorage.setItem("catID", 103);
+        localStorage.setItem("catID", 103); //DESAFIATE
         window.location = "products.html"
     });
 
@@ -18,4 +18,9 @@ document.addEventListener("DOMContentLoaded", function(){
         // si no es asi, redirige a login hasta que sea true
         window.location.href = 'login.html';
     }
+
+    let contenidoIndex = localStorage.getItem("EmailPersona");
+    let emailPersona = document.getElementById("emailPersona");
+    emailPersona.innerHTML = `Perfil: ${contenidoIndex}`;
+
 });

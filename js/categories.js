@@ -37,7 +37,7 @@ function sortCategories(criteria, array){
 
 function setCatID(id) {
     localStorage.setItem("catID", id);
-    window.location = "products.html"
+    window.location = "products.html";
 }
 
 function showCategoriesList(){
@@ -140,4 +140,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
         showCategoriesList();
     });
+    let contenidoIndex = localStorage.getItem("EmailPersona");
+    let emailPersona = document.getElementById("emailPersona");
+    emailPersona.innerHTML = `Perfil: ${contenidoIndex}`;
 });

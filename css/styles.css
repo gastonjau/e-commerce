@@ -203,6 +203,7 @@ a.custom-card:hover {
 }
 #abajo{
   padding-top: 50px;
+  text-align: center;
 }
 
 /* CARD DE LOS PRODUCTOS */
@@ -271,3 +272,28 @@ footer a{
 footer a:hover{
   color: #F09100;
 }
+
+#letterSearch{
+  width: 300px;
+  margin: 0px 10px;
+}
+#flexdiv{
+  display: flex;
+}
+#searchIcon{
+  display: flex;
+}
+
+/* Mostrar contraseña */
+#showPasswordBtn img {
+  width: 20px; 
+  height: auto;
+  margin: 0 5px; 
+}
+#showPasswordBtn {
+  padding: 2px;
+  background: none; 
+  border: 1px solid #DDDCDC;
+  border-radius: 0 5px 5px 0;
+}
+

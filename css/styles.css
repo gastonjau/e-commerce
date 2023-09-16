@@ -297,3 +297,107 @@ footer a:hover{
   border-radius: 0 5px 5px 0;
 }
 
+.estrellitas{
+  color: #F09100;
+  text-align: center;
+}
+.imgCompleta{
+  color: #F09100;
+}
+.imgNoCompleta{
+  color: #F09100;
+}
+
+.claseEstrella{
+  background-color: #F09100;
+}
+.claseEstrellaWhite{
+  background-color: white;
+}
+.contenedor1{
+  padding-top: 50px;
+  
+}
+
+.imagenesgas{
+  width: 200px;
+}
+.imagenesOrden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 250px;
+}
+
+.estrellitas{
+  margin-bottom: 80px;
+  margin-top: 30px;
+justify-content: center;
+}
+
+.contenedor1{
+  width: 400px;
+}
+
+.cat1{
+  font-weight: bold;
+}
+
+.imagenesgas {
+  margin: 50px;
+  border: 1px solid #ccc;
+  
+ 
+}
+
+.imagenesgas:hover {
+  border: 5px solid #fff;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.imagenesgas img {
+  width: 120%; 
+  cursor: pointer;
+  z-index: 0;
+  transition: .25s,z-index 0s .25s;
+  place-self: start;
+}
+
+.galeria {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+.form-group{
+  display: block;
+  margin-left: 16%;
+  width: 35%;
+}
+.btnComentarios{
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: #0087F7;
+  color: white;
+  
+}
+
+.fa-star {
+  color: #F09100;
+}
+
+.comentario1{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnComentarios{
+  background-color: #F09100;
+}

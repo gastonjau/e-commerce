@@ -14,7 +14,11 @@
 .jumbotron .display-4 {
   font-weight: bold;
 }
-
+.agruparBtn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 nav a {
   text-decoration: none;
 }
@@ -28,12 +32,115 @@ nav a {
   user-select: none;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #contenedorCarrito{
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+
+  table{
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+  
+  #lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .conten > tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+  .text-end{
+    padding: 0px 10px;
+    margin: 0px;
+  }
+  html{
+    padding: 0px;
+  }
+  .ajovenes {
+    padding: 0px;
+    display: flex;
+    margin-right: 0px;
+  }
+  .text-muted{
+    padding-right: 0px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .grupobtnok{
+    padding-right: 0px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #clearRangeFilter{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+
+  }
+  .cardproduct{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+  .padd{
+    max-width:  200px;
+    
+  }
+}
+@media (max-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
 }
-
+@media (max-width:698px) {
+  .padd{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+  }
+  
+}
+@media (max-width:774px) {
+  .padd{
+    padding: 50px 10px 50px 0px ;
+  }
+  .imgcard1{
+    padding: 0px;
+    margin: 20px;
+    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .jumbotron {
   height: 50vh;
   padding: 5em inherit;
@@ -45,12 +152,25 @@ nav a {
   background-repeat: no-repeat;
   color: black;
   font-weight: bold;
+  display: none;
 }
 
-@media (min-width: 768px) {
+main{
+  padding: 6px;
+}
+
+.login-cellphone{
+  width: 98%;
+}
+
+@media (min-width: 1100px) {  
   .jumbotron {
     padding-top: 6rem;
     padding-bottom: 6rem;
+    display: grid !important;
+  }
+  .login-cellphone{
+    display: none;
   }
 }
 
@@ -209,6 +329,18 @@ a.custom-card:hover {
   text-align: center;
 }
 
+@media (max-width: 530px) {
+  .loginb{
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 7px;
+  }
+  
+}
+
 /* CARD DE LOS PRODUCTOS */
 .product-card {
   display: flex;
@@ -290,10 +422,13 @@ footer {        /* Mirarlo en la proxima reunion */
   background-color: #212529; 
   color: #fff; 
   padding: 10px 0; 
+  height: 2.5rem;
 }
 footer p {
   color: white;
   margin-bottom: .25rem;
+  font-size: smaller;
+  padding: 7px;
 }
 footer a{
   color: #F09100;
@@ -706,10 +841,9 @@ justify-content: center;
 }
 
 [data-bs-theme="dark"] .container{
-  padding: 0px;
-  background-color: #585757 ;
-  
+  padding: 0px;  
 }
+
 [data-bs-theme="dark"] .muchomas{
   border: none;
   background-color: #585757;;
@@ -738,4 +872,72 @@ justify-content: center;
 }
 [data-bs-theme="dark"]  .container-foot{
   background-color: #212529;
+}
+
+.contenedorCarritoTitle{
+  padding: 0px !important;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+input[type="text"] {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+h4 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #333;
+}
+thead tr th{
+  padding-left: 30px;
+}
+#costoTh{
+  padding-left: 55px;
+}
+#inputCarrito{
+  width: 80px;
+  margin-left: 30px ;
+}
+#nombreCarrito{
+ padding-left: 20px;
+}
+.precio{
+  padding-left: 15px;
+}
+#ress{
+  font-weight: bold;
+  padding-left: 20px;
+}
+.res{
+  font-weight: bold;
 }

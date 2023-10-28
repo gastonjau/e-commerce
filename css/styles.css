@@ -31,41 +31,7 @@ nav a {
   -ms-user-select: none;
   user-select: none;
 }
-
 @media (max-width: 600px) {
-  .container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  #contenedorCarrito{
-    display: flex;
-    
-    flex-wrap: wrap;
-  }
-
-  table{
-    display: flex;
-    
-    flex-wrap: wrap;
-  }
-  
-  #lista{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .conten > tr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-  }
-
   .text-end{
     padding: 0px 10px;
     margin: 0px;
@@ -338,7 +304,6 @@ a.custom-card:hover {
     flex-direction: column;
     margin: 7px;
   }
-  
 }
 
 /* CARD DE LOS PRODUCTOS */
@@ -423,6 +388,7 @@ footer {        /* Mirarlo en la proxima reunion */
   color: #fff; 
   padding: 10px 0; 
   height: 2.5rem;
+  z-index: 1000 !important;
 }
 footer p {
   color: white;
@@ -578,11 +544,6 @@ justify-content: center;
 .imagenRela:hover{
   transition: all 100ms;
   height: 180px;
-}
-
-#ContenidoProductosRelacionados{
-  width: 90%;
-  display: flex;
 }
 
 #ContenidoProductosRelacionados > img{
@@ -764,6 +725,32 @@ justify-content: center;
   background-color: #333333;
 }
 
+.form-group{
+  width: 100%;
+  margin-left: 0%;
+  padding: 0.5em;
+}
+
+.comment-title{
+  text-align: center;
+}
+
+@media (min-width: 568px) {
+  .form-group textarea{
+    width: 60%;
+    margin-left: 20%;
+  }
+  #ContenidoProductosRelacionados{
+    display: flex !important;
+    width: 100%;
+    justify-content: center !important;
+  }
+}
+
+#ContenidoProductosRelacionados{
+  display: grid;
+}
+
 [data-bs-theme="dark"] #idcat1{
   background-color: #333333;
   border-radius: 10px 0px 0px 10px;
@@ -940,4 +927,28 @@ thead tr th{
 }
 .res{
   font-weight: bold;
+}
+#containerCostos{
+  margin-left: 15%; 
+  margin-right: 15%; 
+  border: 1px solid rgb(151, 151, 151);
+  border-radius: 5px;
+}
+#centrarh5{
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+#clearfix{
+  padding-bottom: 50px;
+}
+input[type="button"] {
+  margin-left: 25%;
+  width: 50%;
+  height: 50px;
+  color: white;
+  background-color: #0D6EFD;
+  border-color: #0D6EFD;
+  border-radius: 5px;
+
 }
